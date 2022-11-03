@@ -1,0 +1,233 @@
+﻿<!
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #top {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        #nav {
+            line-height: 30px;
+            background-color: #eeeeee;
+            height: 520px;
+            width: 170px;
+            padding: 0px;
+            position: fixed;
+            float: left;
+        }
+
+        #white {
+            padding-bottom: 400px;
+        }
+
+        #login {
+            background-color: darkslateblue;
+            top: 30%;
+            left: 30%;
+            position: fixed;
+            width: 400px;
+            height: 300px;
+            display: none;
+            border-radius: 4px;
+            z-index: 10;
+        }
+
+            #login h2 {
+                color: #fff;
+                text-shadow: 0 0 10px;
+                text-align: center;
+                font-size: 30px;
+            }
+
+        #up {
+            width: 250px;
+            height: 20px;
+            color: white;
+            font-size: 12px;
+            background-color: black;
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        #dr {
+            width: 250px;
+            height: 30px;
+            color: white;
+            font-size: 12px;
+            padding: 5px;
+            border-radius: 4px;
+            background-color: dodgerblue;
+            margin-bottom: 10px;
+        }
+        #jr {
+            width: 80px;
+            height: 20px;
+            color: white;
+            font-size: 5px;
+            border-radius: 4px;
+            background-color: dodgerblue;
+        }
+        #jige{
+            position:relative;
+            top:100px;
+            left:300px;
+            width:800px;
+            height:500px;
+        }
+        #dingzheng {
+            position: relative;
+            top: 100px;
+            left: 300px;
+            width: 800px;
+            height: 500px;
+        }
+        #kuailin {
+            position: relative;
+            top: 100px;
+            left: 300px;
+            width: 800px;
+            height: 500px;
+        }
+    </style>
+</head>
+        }
+<body>
+    <div id="top">
+        <h1>测试</h1>
+    </div>
+
+    <div id="nav"><em>(列表)</em>
+        <ol>
+            <li>
+                中国明星
+                <ul>
+                    <li><a href="#jige">鸡哥</a></li>
+                    <li><a href="#dingzheng">理塘丁真</a></li>
+                    <li><a href="#kuailin">青蛙公主</a></li>
+                </ul>
+            </li>
+            <li>
+                网站功能
+                <ul>
+                    <li><a href="#top">回到顶部</a></li>
+                    <li><button onclick="document.getElementById('login').style.display = 'block'">登录</button>(表单)</li>
+                    <li><a href="1.html">本地网站</a></li>
+                </ul>
+            </li>
+            <li>
+                明星资料<br />（外部网站）
+                    <ul>
+                        <li><a href="https://baike.baidu.com/item/%E8%B0%B7%E7%88%B1%E5%87%8C/22233526">谷爱凌</a></li>
+                        <li><a href="https://baike.baidu.com/item/%E8%94%A1%E5%BE%90%E5%9D%A4/8511458">蔡徐坤</a></li>
+                        <li><a href="https://baike.baidu.com/item/%E4%B8%81%E7%9C%9F%E7%8F%8D%E7%8F%A0/55355315">丁真</a></li>
+                    </ul>
+            </li>
+            <li>远程图片<br />
+                <img src="https://gss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/dcc451da81cb39db9e9dfd36d3160924ab183074.jpg" width="50px" height="50px"
+            </li>
+        </ol>
+    </div>
+
+
+
+   <div id="login">
+    <h2>login</h2>
+    <center>
+        <input type="text" placeholder="用户名" id="up"><br />
+        <input type="password" placeholder="密码" id="up"><br />
+        <input type="button" id="dr" onclick="alert('密码错误!')" value="登录"><br />
+        <input type="text" placeholder="联系方式" style="width: 100px; background-color: black; color: white;">
+        <input type="text" placeholder="昵称" style="width: 100px; background-color: black; color: white;">
+        <input type="text" placeholder="自我介绍" style="width: 100px;background-color: black;color:white;"><br />
+        <form>
+            爱好:<input type="checkbox">唱<input type="checkbox">跳<input type="checkbox">rap
+            &emsp;
+            性别:<input type="radio" name="sex" />男<input type="radio" name="sex" />
+            &emsp;
+            <select name="bj">
+                <option value="bj">班级</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+            </select>
+        </form>
+        <input type="button" id="jr" onclick="alert('手机号格式不正确!')" value="注册">&emsp;
+        <input type="button" id="jr" onclick="alert('请输入正确的联系方式!')" value="发送验证码">&emsp;
+        忘记密码？<input type="button" id="jr" onclick="alert('404!')" value="点我！">
+    </center>
+    <button style="position: absolute; right: 0; top: 0;" type="button" onclick="document.getElementById('login').style.display = 'none'">×</button>
+    </div>
+
+
+
+
+
+
+
+    <div id="jige">
+        <table border="6">
+            <caption>蔡徐坤</caption>
+            <tr>
+                <td rowspan="2"><img src="cxk.gif" /></td>
+                <td colspan="2">爱好：唱,跳,rap,篮球</td>
+            </tr>
+            <tr>
+                <td rowspan="2">自我介绍</td>
+                <td>全民制作人们大家好,我是练习时长两年半的个人练习生蔡徐坤,喜欢唱,跳,rap,篮球,music……在今后的节目中，我还准备了很多我自己作词、作曲、编舞的原创作品，期待的话，请多多为我投票吧。</td>
+            </tr>
+        </table>
+    </div>
+    <p style="color: white;padding: 900px;">skip</p>
+
+
+
+    <div id="dingzheng">
+        <table border="6">
+            <caption>丁真</caption>
+            <tr>
+                <td rowspan="2"><img src="dingzheng2.gif" /></td>
+                <td colspan="2">爱好：抽悦刻5电子烟</td>
+            </tr>
+            <tr>
+                <td rowspan="2">人物介绍</td>
+                <td><img src="dingzheng1.gif" /><br />丁真珍珠（汉语名：丁真），2001年5月7日出生于中国四川省甘孜藏族自治州理塘县，藏族，四川文化旅游宣传推广大使 [50]  、中国内地男歌手 [74-75]  ，生活在四川省甘孜藏族自治州理塘县 [1-2]  。</td>
+            </tr>
+        </table>
+    </div>
+    <p style="color: white;padding: 900px;">skip</p>
+
+
+
+    <div id="kuailin">
+        <table border="6">
+            <caption>谷爱凌</caption>
+            <tr>
+                <td rowspan="2"><img src="kuailin.jfif" /></td>
+                <td colspan="2">爱好：滑雪</td>
+            </tr>
+            <tr>
+                <td rowspan="2">人物介绍</td>
+                <td>谷爱凌（Gu Ailing Eileen），2003年9月3日出生于美国加利福尼亚州圣弗朗西斯科，昵称“青蛙公主”，中国女子自由式滑雪运动员。她是国际雪联第一位自由式滑雪女子U型场地大满贯 ，也是中国首位在世界极限运动会夺金的运动员。<br />“当我在美国的时候，我就是美国人，当我在中国的时候，我就是中国人。”</td>
+            </tr>
+        </table>
+    </div>
+    <p style="color: white;padding: 900px;">skip</p>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
